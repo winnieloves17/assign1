@@ -12,14 +12,10 @@ int h = 50;
 // put your code inside here
 
 int totalScore = 500;
-if (button) {
-    if (!rolling){
-      totalScore-50;
-      
-mahcine.setSlotFruit(int slotPosition, int fruitId);
-mahcine.getSlotScore(int slotPosition);
-machine.getFruitCount(int fruitId);
-machine.probability(float p);
+
+      machine.setSlotFruit(0,2);
+      machine.setSlotFruit(1,2);
+      machine.setSlotFruit(2,2);
 
 // --------------------------------------------
 
@@ -57,6 +53,7 @@ void draw() {
       // start rolling
       // -------------------------------------------------
       // put your code inside here
+      
       machine.setSlotFruit(0,2);
       machine.setSlotFruit(1,2);
       machine.setSlotFruit(2,2);
@@ -79,9 +76,14 @@ void draw() {
       // put your code inside here
       
       
-       machine.setSlotFruit(0,random(6));
-      machine.setSlotFruit(1,random(6));
-      machine.setSlotFruit(2,random(6));
+      float a = random(6)
+      float b = random(6)
+      float c = random(6)
+ 
+      machine.setSlotFruit(0,a);
+      machine.setSlotFruit(1,b);
+      machine.setSlotFruit(2,c);     
+      
       
         int a = mahcine.getSlotScore(0); 
         int b = mahcine.getSlotScore(1);  
