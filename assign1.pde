@@ -10,7 +10,27 @@ int h = 50;
 // declare variables
 // --------------------------------------------
 // put your code inside here
-int totalScore = 0;
+int totalScore = 500;
+
+mahcine.setSlotFruit(int x, int fid);
+int mahcine.setSlotFruit(0, 0)=60;
+int mahcine.setSlotFruit(1, 0)=60;
+int mahcine.setSlotFruit(2, 0)=60;
+int mahcine.setSlotFruit(0, 1)=10;
+int mahcine.setSlotFruit(1, 1)=10;
+int mahcine.setSlotFruit(2, 1)=10;
+int mahcine.setSlotFruit(0, 2)=20;
+int mahcine.setSlotFruit(1, 2)=20;
+int mahcine.setSlotFruit(2, 2)=20;
+int mahcine.setSlotFruit(0, 3)=30;
+int mahcine.setSlotFruit(1, 3)=30;
+int mahcine.setSlotFruit(2, 3)=30;
+int mahcine.setSlotFruit(0, 4)=40;
+int mahcine.setSlotFruit(1, 4)=40;
+int mahcine.setSlotFruit(2, 4)=40;
+int mahcine.setSlotFruit(0, 5)=50;
+int mahcine.setSlotFruit(1, 5)=50;
+int mahcine.setSlotFruit(2, 5)=50;
 
 // --------------------------------------------
 
@@ -48,7 +68,10 @@ void draw() {
       // start rolling
       // -------------------------------------------------
       // put your code inside here
-      
+      a = random(6);
+      b = random(6);
+      c = random(6);
+      int result = machine.probability(0.1);
       
       // -------------------------------------------------
     }
@@ -62,10 +85,13 @@ void draw() {
       // stop rolling
       // -------------------------------------------------
       // put your code inside here
-      
+        rolling = false;
+        int a = mahcine.getSlotScore(0); //
+        int b = mahcine.getSlotScore(1); // 
+        int c = mahcine.getSlotScore(2); // 
+        mahcine.getSlotScore(int x);
  
- 
- 
+
       
       // -------------------------------------------------
     }
