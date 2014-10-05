@@ -13,10 +13,6 @@ int h = 50;
 
 int totalScore = 500;
 
-      machine.setSlotFruit(0,2);
-      machine.setSlotFruit(1,2);
-      machine.setSlotFruit(2,2);
-
 // --------------------------------------------
 
 void setup() {
@@ -53,14 +49,15 @@ void draw() {
       // start rolling
       // -------------------------------------------------
       // put your code inside here
-      
-      machine.setSlotFruit(0,2);
-      machine.setSlotFruit(1,2);
-      machine.setSlotFruit(2,2);
-      
 
-      
-      
+      totalScore=totalScore-50;
+
+
+int result = machine.probability(0.5);
+println(result);
+machine.setSlotFruit(0,0);
+machine.setSlotFruit(1,0);
+machine.setSlotFruit(2,0);
       
       // -------------------------------------------------
     }
@@ -75,27 +72,24 @@ void draw() {
       // -------------------------------------------------
       // put your code inside here
       
-      
-      float a = random(6)
-      float b = random(6)
-      float c = random(6)
- 
+int a = int (random(6)); 
+int b = int (random(6));
+int c = int (random(6));
       machine.setSlotFruit(0,a);
       machine.setSlotFruit(1,b);
-      machine.setSlotFruit(2,c);     
+      machine.setSlotFruit(2,c); 
       
-      
-        int a = mahcine.getSlotScore(0); 
-        int b = mahcine.getSlotScore(1);  
-        int c = mahcine.getSlotScore(2);  
-        
-        int m = machine.getFruitCount(a); 
-        int n = machine.getFruitCount(b); 
-        int o = machine.getFruitCount(c);
-        
-        
-       
-        
+      int d = machine.getSlotScore(0); 
+      int e = machine.getSlotScore(1); 
+      int f = machine.getSlotScore(2);
+int g = machine.getFruitCount(0);
+int h = machine.getFruitCount(1);
+int i = machine.getFruitCount(2);
+
+      totalScore=totalScore+d*g+e*h+f*i; //calculate total score 
+     
+
+
 
       
       // -------------------------------------------------
@@ -114,10 +108,3 @@ void mousePressed() {
     button = !button;
   }  
 }
-
-
-
-
-
-
-
