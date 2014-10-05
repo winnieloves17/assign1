@@ -52,11 +52,6 @@ void draw() {
 
 totalScore=totalScore-50; //Every time press start minus 50
 
-int result = machine.probability(0.5);
-println(result);
-machine.setSlotFruit(0,0);
-machine.setSlotFruit(1,0);
-machine.setSlotFruit(2,0);
       
       // -------------------------------------------------
     }
