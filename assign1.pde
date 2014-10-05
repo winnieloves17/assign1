@@ -11,7 +11,7 @@ int h = 50;
 // --------------------------------------------
 // put your code inside here
 
-int totalScore = 500;
+int totalScore = 500; //Start totalScore
 
 // --------------------------------------------
 
@@ -50,8 +50,7 @@ void draw() {
       // -------------------------------------------------
       // put your code inside here
 
-      totalScore=totalScore-50;
-
+totalScore=totalScore-50; //Every time press start minus 50
 
 int result = machine.probability(0.5);
 println(result);
