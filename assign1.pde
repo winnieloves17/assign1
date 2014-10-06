@@ -13,22 +13,7 @@ int h = 50;
 
 int totalScore = 500; //Start totalScore
 
-machine.probability(0.1)
 
-if (result=1) {
-      machine.setSlotFruit(0,0);
-      machine.setSlotFruit(1,0);
-      machine.setSlotFruit(2,0);
-} else { 
-    int a = int (random(6)); 
-    int b = int (random(6));
-    int c = int (random(6));
-      machine.setSlotFruit(0,a);
-      machine.setSlotFruit(1,b);
-      machine.setSlotFruit(2,c); 
-}
-
-println(result);
 
 
 // --------------------------------------------
