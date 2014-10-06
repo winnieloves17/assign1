@@ -26,7 +26,7 @@ if (result=1) {
       machine.setSlotFruit(0,a);
       machine.setSlotFruit(1,b);
       machine.setSlotFruit(2,c); 
-};
+}
 
 println(result);
 
