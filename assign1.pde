@@ -13,6 +13,24 @@ int h = 50;
 
 int totalScore = 500; //Start totalScore
 
+machine.probability(0.1)
+
+if (result=1) {
+      machine.setSlotFruit(0,0);
+      machine.setSlotFruit(1,0);
+      machine.setSlotFruit(2,0);
+} else { 
+    int a = int (random(6)); 
+    int b = int (random(6));
+    int c = int (random(6));
+      machine.setSlotFruit(0,a);
+      machine.setSlotFruit(1,b);
+      machine.setSlotFruit(2,c); 
+};
+
+println(result);
+
+
 // --------------------------------------------
 
 void setup() {
@@ -73,14 +91,15 @@ int c = int (random(6));
       machine.setSlotFruit(1,b);
       machine.setSlotFruit(2,c); 
       
-      int d = machine.getSlotScore(0); 
-      int e = machine.getSlotScore(1); 
-      int f = machine.getSlotScore(2);
-int g = machine.getFruitCount(0);
-int h = machine.getFruitCount(1);
-int i = machine.getFruitCount(2);
 
-      totalScore=totalScore+d*g+e*h+f*i; //calculate total score 
+int d = machine.getFruitCount(0);
+int e = machine.getFruitCount(1);
+int f = machine.getFruitCount(2);
+int g = machine.getFruitCount(3);
+int h = machine.getFruitCount(4);
+int i = machine.getFruitCount(5);
+
+      totalScore=totalScore+d*60+e*50+f*40+g*30+h*20+i*10; //calculate total score 
      
 
 
